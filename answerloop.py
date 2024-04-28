@@ -6,8 +6,8 @@ dict = {
     "are MAC address useful outside of the local network?":"no",
     "can a l2 switch route?":"no"
 }
-i = 0
 
+i = 0
 
 while i < 4:
     print(i)
