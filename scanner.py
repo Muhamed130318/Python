@@ -11,7 +11,7 @@ for i in range(1000):
     conn = scanner.connect_ex((targetIP, i))
     if (conn == 0):
         print("Port %d: OPEN" %(i))
-    conn.close()
+    scanner.close()
 
 endTime = time.time()
 
