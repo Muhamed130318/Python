@@ -1,6 +1,6 @@
 import socket
 
-dest = socket.gethostname()
+dest = "192.168.0.20"
 port = 8080
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -14,4 +14,6 @@ while True:
     print("connection received from %s" %str(address))
     message = "connection established."
     conn.send(message.encode('ascii'))
+    received = conn.recv(1024)
+    print(received)
     conn.close()
